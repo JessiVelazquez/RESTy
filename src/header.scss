@@ -1,0 +1,19 @@
+$bgColor: rgb(195, 205, 226);
+
+body {
+  background: $bgColor;
+
+  #header {
+    h1 {
+      font-family: fantasy;
+      font-size: 48px;
+      color:rgb(23, 42, 36)
+    }
+    h3 {
+      font-family: fantasy;
+    }
+    li {
+      font-family: monospace;
+    }
+  }
+}
