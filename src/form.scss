@@ -1,0 +1,14 @@
+$bgColor: rgb(197, 197, 244);
+
+
+body {
+
+  #form {
+    padding: 40px;
+    background: $bgColor;
+    border: 10px  darkslategrey solid;
+    h1 {
+      color:rgb(97, 206, 245)
+    }
+  }
+}

@@ -1,0 +1,14 @@
+$bgColor: rgb(210, 220, 234);
+
+
+#footer {
+  background: $bgColor;
+  padding: 20px;
+  h1 {
+    color:rgb(161, 230, 230);
+  }
+  p {
+    font-family: monospace;
+  }
+}
+
