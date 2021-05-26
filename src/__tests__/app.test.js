@@ -24,7 +24,6 @@ it('should verify expected length of API call return (10)', async () => {
 
   render(<Results src={results} />);
 
-  console.log(results);
   expect(results).toHaveLength(10);
 
 });
