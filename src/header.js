@@ -11,6 +11,7 @@ const Header = () => {
           <li>Enter URL for the http route you want to hit</li>
           <li>Select REST method: GET, POST, PUT, or DELETE. Click "GO!"</li>
           <li>You will see your URL entered and method selected displayed below the form</li>
+          <li>You will see the results of your API call displayed in the "results" section as JSON data</li>
         </ol>
       </nav>
     </header>
