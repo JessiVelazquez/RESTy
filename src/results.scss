@@ -1,0 +1,17 @@
+$bgColor: rgb(206, 206, 244);
+
+
+body {
+
+  #results {
+    padding: 40px;
+    background: $bgColor;
+    border: 4px  rgb(30, 31, 31) solid;
+    h1 {
+      color:rgb(97, 206, 245)
+    }
+    h3 {
+      font-family: fantasy;
+    }
+  }
+}

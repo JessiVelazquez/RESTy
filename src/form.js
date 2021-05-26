@@ -10,6 +10,25 @@ class Form extends React.Component {
     };
   };
 
+  handleSubmit = async e => {
+    e.preventDefault();
+    let routeMethod = {
+      method: this.state.method,
+      headers: { 'Content-Type': 'application/json' }
+    }
+
+    // let raw = await fetch('https://swapi.dev/api/people/');
+    let raw = await fetch(this.state.URL);
+    let data = await raw.json();
+    // let jsonData = JSON.stringify(data.results);
+    let count = data.count;
+
+
+    this.props.handler(count, data.results);
+    this.props.toggleLoading();
+    // console.log(JSON.stringify(jsonData));
+  }
+
   handleChangeURL = e => {
     let URL = e.target.value;
     this.setState({ URL });
@@ -22,7 +41,7 @@ class Form extends React.Component {
 
   render() {
     return(
-      <form id="form">
+      <form id="form" onSubmit={this.handleSubmit}>
         <label for="URL">URL:</label>
         <input type="text" onChange={this.handleChangeURL} ></input>
         <select onChange={this.handleChangeMethod} >
@@ -31,6 +50,7 @@ class Form extends React.Component {
           <option value="PUT">PUT</option>
           <option value="DELETE">DELETE</option>
         </select>
+        <button>GO!</button>
         <br></br>
         <br></br>
         <h3>URL entered: {this.state.URL}</h3>
