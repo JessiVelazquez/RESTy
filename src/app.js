@@ -5,6 +5,7 @@ import Footer from './footer.js';
 import Form from './form.js';
 import Results from './results.js';
 import History from './history.js';
+import { If, Then, Else } from './if';
 
 
 class App extends React.Component {
@@ -14,14 +15,19 @@ class App extends React.Component {
     this.state = {
       loading: false,
       count: 0,
-      results: [],
+      results: '',
       url: '',
-      route: ''
+      route: '',
+      searchLoading: false
     }
   }
 
   toggleLoading = () => {
     this.setState({ loading: !this.state.loading });
+  };
+
+  toggleSearchLoading = () => {
+    this.setState({ loading: !this.state.searchLoading });
   };
 
   handleForm = (count, results, url, route) => {
@@ -44,9 +50,14 @@ class App extends React.Component {
         <br></br>
         <Form prompt="click for results" toggleLoading={this.toggleLoading} handler={this.handleForm} url={this.state.url} route={this.state.route} handleChange={this.handleChange}/>
         <br></br>
-        <Results results={this.state.results}/>
-        <br></br>
-        <History handleHistory={this.handleHistory}/>
+        <div className="rapper">
+          <History className="hist" handleHistory={this.handleHistory}/>
+          <If condition={this.state.results}>
+            <Then>
+              <Results results={this.state.results} searchLoading={this.toggleSearchLoading}/>
+            </Then>
+          </If>
+        </div>
         <Footer />
       </div>
     );

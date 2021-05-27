@@ -3,10 +3,22 @@ $bgColor: rgb(191, 191, 238);
 body {
   background: $bgColor;
 
+  
+
   #bg {
     h1 {
       color:rgb(0, 0, 0)
     }
+  }
+
+  .rapper {
+    display: grid;
+    grid-template-columns: 33% 67%;
+  }
+
+  .hist {
+    font-family: monospace;
+    word-wrap: break-word;
   }
 }
 

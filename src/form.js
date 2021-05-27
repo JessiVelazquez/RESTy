@@ -54,8 +54,8 @@ class Form extends React.Component {
         <button>GO!</button>
         <br></br>
         <br></br>
-        <h3>URL entered: {this.state.URL}</h3>
-        <h3>Method selected: {this.state.method}</h3>
+        <h3>URL entered: {this.props.url}</h3>
+        <h3>Method selected: {this.props.route}</h3>
       </form>
     );
   };
