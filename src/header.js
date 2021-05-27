@@ -12,6 +12,7 @@ const Header = () => {
           <li>Select REST method: GET, POST, PUT, or DELETE. Click "GO!"</li>
           <li>You will see your URL entered and method selected displayed below the form</li>
           <li>You will see the results of your API call displayed in the "results" section as JSON data</li>
+          <li>Keep in mind you lack credentials to POST, PUT, or DELETE to external API's...</li>
         </ol>
       </nav>
     </header>
