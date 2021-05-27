@@ -6,13 +6,32 @@ body {
   #form {
     padding: 40px;
     background: $bgColor;
-    border: 10px  darkslategrey solid;
+    border: 6px  rgb(86, 96, 118) solid;
     h1 {
       color:rgb(97, 206, 245)
     }
     h3 {
       font-family: monospace;
       font-size: medium;
+      color: rgb(86, 96, 118);
+    }
+    label {
+      font-family: monospace;
+      font-size: 18px;
+      padding-right: 4px;
+      color: rgb(2, 34, 23);
+    }
+    input {
+      margin-right: 4px;
+      border-radius: 1px;
+    }
+    select {
+      margin-right: 4px;
+      color: rgb(2, 34, 23);
+    }
+    button {
+      background-color: rgb(86, 96, 118);
+      color: honeydew;
     }
   }
 }

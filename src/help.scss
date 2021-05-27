@@ -4,6 +4,9 @@ body {
   background: $bgColor;
 
   #help {
+    border: 6px  rgb(86, 96, 118) solid;
+    padding-left: 10px;
+    background-color: rgb(197, 197, 244);
     h1 {
       font-family: fantasy;
       font-size: 48px;
@@ -12,9 +15,11 @@ body {
     h3 {
       font-family: fantasy;
       margin-top: 80px;
+      color: rgb(2, 34, 23);
     }
     li {
       font-family: monospace;
+      color: rgb(2, 34, 23);
     }
   }
 }
