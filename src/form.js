@@ -21,6 +21,7 @@ class Form extends React.Component {
     this.setState({ storageCounter: counter });
 
     //-----STAR WARS API URL: 'https://swapi.dev/api/people/';
+    //-----POKEMON API URL: 'https://pokeapi.co/api/v2/pokemon/ditto';
     let raw = await superagent(route, url);
     let results = raw.body;
     //------fetch verison--------\\
