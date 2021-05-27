@@ -22,7 +22,8 @@ class Form extends React.Component {
 
     //-----STAR WARS API URL: 'https://swapi.dev/api/people/';
     let raw = await superagent(route, url);
-    let results = raw.body.results;
+    console.log('RAW', raw);
+    let results = raw.body;
     //------fetch verison--------\\
     // let raw = await fetch(this.state.URL);
     // let results = await raw.json();
