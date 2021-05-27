@@ -1,0 +1,20 @@
+$bgColor: rgb(195, 205, 226);
+
+body {
+  background: $bgColor;
+
+  #help {
+    h1 {
+      font-family: fantasy;
+      font-size: 48px;
+      color:rgb(23, 42, 36)
+    }
+    h3 {
+      font-family: fantasy;
+      margin-top: 80px;
+    }
+    li {
+      font-family: monospace;
+    }
+  }
+}

@@ -5,7 +5,9 @@ import Footer from './footer.js';
 import Form from './form.js';
 import Results from './results.js';
 import History from './history.js';
+import Help from './help.js';
 import { If, Then, Else } from './if';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -45,21 +47,28 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id="bg">
-        <Header />
-        <br></br>
-        <Form prompt="click for results" toggleLoading={this.toggleLoading} handler={this.handleForm} url={this.state.url} route={this.state.route} handleChange={this.handleChange}/>
-        <br></br>
-        <div className="rapper">
-          <History className="hist" handleHistory={this.handleHistory}/>
-          <If condition={this.state.results}>
-            <Then>
-              <Results results={this.state.results} searchLoading={this.toggleSearchLoading}/>
-            </Then>
-          </If>
+      <BrowserRouter>
+        <div id="bg">
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Form prompt="click for results" toggleLoading={this.toggleLoading} handler={this.handleForm} url={this.state.url} route={this.state.route} handleChange={this.handleChange}/>
+                <If condition={this.state.results}>
+                  <Then>
+                    <Results results={this.state.results} searchLoading={this.toggleSearchLoading}/>
+                  </Then>
+                </If>
+              </Route>
+              <Route exact path="/history">
+                <History className="hist" handleHistory={this.handleHistory}/>
+              </Route>
+              <Route exact path ="/help">
+                <Help />
+              </Route>
+            </Switch>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </BrowserRouter>
     );
   };
 };

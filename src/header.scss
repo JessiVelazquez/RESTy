@@ -1,19 +1,31 @@
-$bgColor: rgb(195, 205, 226);
+$bgColor: rgb(86, 96, 118);
 
 body {
-  background: $bgColor;
+  background-color: $bgColor;
 
   #header {
+    height: 100px;
+    background-color: $bgColor;
+    padding-bottom: 40px;
     h1 {
       font-family: fantasy;
       font-size: 48px;
-      color:rgb(23, 42, 36)
+      color:rgb(182, 209, 201);
+      float: left;
+      padding-right: 40px;
     }
     h3 {
       font-family: fantasy;
+      display: inline-block;
+    }
+    nav {
+      padding-top: 50px;
     }
     li {
       font-family: monospace;
+      display: inline-block;
+      padding-left: 20px;
+      color: honeydew;
     }
   }
 }
