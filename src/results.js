@@ -1,6 +1,7 @@
 import React from 'react';
 import './results.scss';
-import ReactJson from 'react-json-view'
+import ReactJson from 'react-json-view';
+import { If, Then, Else } from './if';
 
 const Results = (props) => {
   return (
