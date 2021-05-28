@@ -1,32 +1,50 @@
-$bgColor: rgb(197, 197, 244);
+$bgColor: rgb(206, 206, 244);
+$bgColor2: rgb(226, 253, 255);
+$bgColor3: rgb(205, 255, 249);
 
 
 body {
 
   #history {
-    padding: 40px;
-    background: $bgColor;
-    border: 6px  rgb(86, 96, 118) solid;
+    height: 150px;
+    padding: 10px;
+    background: $bgColor3;
+    border: 4px  rgb(20, 28, 26) solid;
     word-wrap: break-word;
+    overflow-y: scroll;
     h1 {
       color:rgb(97, 206, 245)
     }
     h3 {
-      font-family: fantasy;
+      font-family: monospace;
       color: rgb(2, 34, 23);
+    }
+    p {
+      font-family: monospace;
     }
     #histList {
       list-style-type: none;
+      font-size: small;
+      margin-top: -7px;
+      margin-bottom: -5px;
       li {
         font-size: small;
+        font-family: monospace;
         color: rgb(2, 34, 23);
         margin-bottom: 6px;
         cursor: pointer;
         button {
+          text-align: right;
           background-color: rgb(86, 96, 118);
           color: honeydew;
           font-size: 11px;
           margin-right: 8px;
+          font-family: monospace;
+          transition: 350ms all;
+        }
+        button:hover {
+            background: $bgColor2;
+            color: black;
         }
       }
     }

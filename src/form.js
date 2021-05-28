@@ -46,19 +46,20 @@ class Form extends React.Component {
   render() {
     return(
       <form id="form" onSubmit={this.handleSubmit}>
-        <label for="URL">URL:</label>
-        <input type="text" name="url" onChange={this.handleChangeURL} value={this.props.url}></input>
-        <select onChange={this.handleChangeMethod} name="route" value={this.props.route}>
-          <option value="GET">GET</option>
-          <option value="POST">POST</option>
-          <option value="PUT">PUT</option>
-          <option value="DELETE">DELETE</option>
-        </select>
-        <button>GO!</button>
+        <div id="subForm">
+          <label for="URL">URL:</label>
+          <input type="text" name="url" onChange={this.handleChangeURL} value={this.props.url}></input>
+          <select onChange={this.handleChangeMethod} name="route" value={this.props.route}>
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+          </select>
+          <button>GO!</button>
+        </div>
         <br></br>
-        <br></br>
-        <h3>URL entered: {this.props.url}</h3>
-        <h3>Method selected: {this.props.route}</h3>
+        <h3>{this.props.url}</h3>
+        <h3>{this.props.route}</h3>
       </form>
     );
   };

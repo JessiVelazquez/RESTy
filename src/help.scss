@@ -1,19 +1,20 @@
-$bgColor: rgb(195, 205, 226);
+$bgColor2: rgb(226, 253, 255);
+$bgColorBody: rgb(78, 87, 107);
 
 body {
-  background: $bgColor;
+  background: $bgColorBody;
 
   #help {
     border: 6px  rgb(86, 96, 118) solid;
     padding-left: 10px;
-    background-color: rgb(197, 197, 244);
+    background-color: $bgColor2;
     h1 {
-      font-family: fantasy;
+      font-family: monospace;
       font-size: 48px;
       color:rgb(23, 42, 36)
     }
     h3 {
-      font-family: fantasy;
+      font-family: monospace;
       margin-top: 80px;
       color: rgb(2, 34, 23);
     }

@@ -1,19 +1,23 @@
-$bgColor: rgb(86, 96, 118);
+$bgColor: rgb(78, 87, 107);
+$bgColor5: rgb(129, 127, 117);
+$titleColor: rgb(165, 255, 214);
+
 
 body {
   background-color: $bgColor;
 
   #header {
+    text-align: center;
     height: 100px;
     background-color: $bgColor;
-    padding-bottom: 30px;
+    padding-bottom: 18px;
     h1 {
       font-family: fantasy;
       font-size: 48px;
-      color: honeydew;
+      color: $titleColor;
       float: left;
       padding-right: 40px;
-      text-shadow:2px 2px 0px rgb(15, 24, 24);
+      text-shadow:4px 4px 0px rgb(4, 5, 5);
     }
     h3 {
       font-family: fantasy;
@@ -27,7 +31,7 @@ body {
       display: inline-block;
       padding-left: 20px;
       a {
-        color: honeydew;
+        color: $titleColor;
       }
     }
   }

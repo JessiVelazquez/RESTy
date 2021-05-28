@@ -1,15 +1,16 @@
-$bgColor: rgb(210, 220, 234);
+$bgColor2: rgb(78, 87, 107);
+
 
 
 #footer {
-  background: $bgColor;
+  background: $bgColor2;
   padding: 20px;
   h1 {
     color:rgb(161, 230, 230);
   }
   p {
     font-family: monospace;
-    color: rgb(2, 34, 23);
+    color: rgb(165, 255, 214);;
   }
 }
 
