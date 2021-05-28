@@ -19,7 +19,7 @@ class App extends React.Component {
       count: 0,
       results: '',
       url: '',
-      route: '',
+      route: 'GET',
       searchLoading: false
     }
   }
@@ -33,6 +33,7 @@ class App extends React.Component {
   };
 
   handleForm = (count, results, url, route) => {
+    console.log('ROUTE URL', route, url);
     this.setState({ count, results, url, route });
   };
 

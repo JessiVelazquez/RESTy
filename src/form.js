@@ -15,10 +15,7 @@ class Form extends React.Component {
     let url = this.props.url;
     let route = this.props.route;
 
-    //======SESSION STORAGE=========\\
-    localStorage.setItem(this.state.storageCounter, `${route} ${url}`);
-    let counter = this.state.storageCounter + 1;
-    this.setState({ storageCounter: counter });
+
 
     //-----STAR WARS API URL: 'https://swapi.dev/api/people/';
     //-----POKEMON API URL: 'https://pokeapi.co/api/v2/pokemon/ditto';
@@ -28,6 +25,11 @@ class Form extends React.Component {
     // let raw = await fetch(this.state.URL);
     // let results = await raw.json();
     let count = results.count;
+
+    //======SESSION STORAGE=========\\
+    localStorage.setItem(this.state.storageCounter, JSON.stringify({ apiCall: `${route} ${url}`, results}));
+    let counter = this.state.storageCounter + 1;
+    this.setState({ storageCounter: counter });
 
     this.props.handler(count, results, url, route);
     this.props.toggleLoading();
