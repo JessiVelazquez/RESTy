@@ -1,19 +1,27 @@
 $bgColor: rgb(197, 197, 244);
+$bgColor2: rgb(226, 253, 255);
+$inputcolor: black;
+$titleColor: rgb(165, 255, 214);
 
 
 body {
 
   #form {
-    padding: 40px;
-    background: $bgColor;
-    border: 6px  rgb(86, 96, 118) solid;
+    height:100px;
+    padding: 20px;
+    background: $bgColor2;
+    border: 4px  rgb(20, 28, 26) solid;
+    #subForm {
+      text-align: center;
+    }
     h1 {
       color:rgb(97, 206, 245)
     }
     h3 {
       font-family: monospace;
       font-size: medium;
-      color: rgb(86, 96, 118);
+      color: rgb(45, 44, 41);
+      text-align: center;
     }
     label {
       font-family: monospace;
@@ -24,14 +32,23 @@ body {
     input {
       margin-right: 4px;
       border-radius: 1px;
+      width: 400px;
     }
     select {
       margin-right: 4px;
       color: rgb(2, 34, 23);
+      background: whitesmoke;
+      font-family: monospace;
     }
     button {
       background-color: rgb(86, 96, 118);
       color: honeydew;
+      font-family: monospace;
+      transition: 350ms all;
+    }
+    button:hover {
+      background: $bgColor2;
+      color: black;
     }
   }
 }

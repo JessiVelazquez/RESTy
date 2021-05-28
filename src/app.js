@@ -61,7 +61,13 @@ class App extends React.Component {
                 </If>
               </Route>
               <Route exact path="/history">
+                <Form prompt="click for results" toggleLoading={this.toggleLoading} handler={this.handleForm} url={this.state.url} route={this.state.route} handleChange={this.handleChange}/>
                 <History className="hist" handleHistory={this.handleHistory}/>
+                  <If condition={this.state.results}>
+                    <Then>
+                      <Results results={this.state.results} searchLoading={this.toggleSearchLoading}/>
+                    </Then>
+                  </If>
               </Route>
               <Route exact path ="/help">
                 <Help />

@@ -16,15 +16,16 @@ class History extends React.Component {
   render() {
     return (
       <div id="history">
-        <h3>History:</h3>
         <section>
+          <h3>History:</h3>
           <ul>
           {Object.keys(localStorage).map((index, value) => {
             console.log(JSON.parse(localStorage.getItem(index, value)));
             return (
               <div id="histList">
-                <li key={index} >{JSON.parse(localStorage.getItem(index, value)).apiCall}
+                <li key={index} >
                   <button value={JSON.parse(localStorage.getItem(index, value)).apiCall} onClick={this.getHistory}>Re-Run</button>
+                  {JSON.parse(localStorage.getItem(index, value)).apiCall}
                 </li>
               </div>
             );

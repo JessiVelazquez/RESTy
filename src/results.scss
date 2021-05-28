@@ -1,18 +1,19 @@
 $bgColor: rgb(206, 206, 244);
+$bgColor3: rgb(205, 255, 249);
 
 
 body {
 
   #results {
     padding: 40px;
-    background: $bgColor;
-    border: 6px  rgb(86, 96, 118) solid;
+    background: $bgColor3;
     word-wrap: break-word;
+    border: 4px  rgb(20, 28, 26) solid;
     h1 {
       color:rgb(97, 206, 245)
     }
     h3 {
-      font-family: fantasy;
+      font-family: monospace;
     }
   }
 }
