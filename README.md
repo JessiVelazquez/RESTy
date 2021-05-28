@@ -2,9 +2,9 @@
 
 Author: Jessi Velazquez
 
-Deployed Link: [https://agitated-knuth-995abc.netlify.app/](https://agitated-knuth-995abc.netlify.app/)
+Deployed Link: [https://resty-by-jessi.herokuapp.com/](https://resty-by-jessi.herokuapp.com/)
 
-PR from Today's Lab: [https://github.com/JessiVelazquez/RESTy/pull/9](https://github.com/JessiVelazquez/RESTy/pull/9)
+PR from Today's Lab: [https://github.com/JessiVelazquez/RESTy/pull/14](https://github.com/JessiVelazquez/RESTy/pull/14)
 
 # Overview
 
@@ -27,3 +27,9 @@ This release adds the functionality of actually hitting an API route. We have ad
 PR from build 1.2.0: PR from Today's Lab: [https://github.com/JessiVelazquez/RESTy/pull/9](https://github.com/JessiVelazquez/RESTy/pull/9)
 
 In this release, we have added a history panel where you can see your past API calls, click on them, and run them again. We also keep the results section hidden until results are available. The history panel uses local storage to perform it's duties.
+
+**1.3.0**
+
+PR from build 1.2.0: PR from Today's Lab: [https://github.com/JessiVelazquez/RESTy/pull/14](https://github.com/JessiVelazquez/RESTy/pull/14)
+
+In this release, we have built out a seperate history page, which shows the user's search history, and includes buttons next to each search history item that when clicked will populate the form back on the home page, so that route can be run again. We have also built out a seperate help page with instructions on how to use the application. We have also moved deployment over to Heroku due to Netlify being mean to us.
