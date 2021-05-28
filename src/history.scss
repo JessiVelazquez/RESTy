@@ -13,9 +13,22 @@ body {
     }
     h3 {
       font-family: fantasy;
+      color: rgb(2, 34, 23);
     }
-    li {
-      font-size: small;
+    #histList {
+      list-style-type: none;
+      li {
+        font-size: small;
+        color: rgb(2, 34, 23);
+        margin-bottom: 6px;
+        cursor: pointer;
+        button {
+          background-color: rgb(86, 96, 118);
+          color: honeydew;
+          font-size: 11px;
+          margin-right: 8px;
+        }
+      }
     }
   }
 }
