@@ -30,6 +30,12 @@ In this release, we have added a history panel where you can see your past API c
 
 **1.3.0**
 
-PR from build 1.2.0: PR from Today's Lab: [https://github.com/JessiVelazquez/RESTy/pull/14](https://github.com/JessiVelazquez/RESTy/pull/14)
+PR from build 1.3.0: PR from Today's Lab: [https://github.com/JessiVelazquez/RESTy/pull/14](https://github.com/JessiVelazquez/RESTy/pull/14)
 
 In this release, we have built out a seperate history page, which shows the user's search history, and includes buttons next to each search history item that when clicked will populate the form back on the home page, so that route can be run again. We have also built out a seperate help page with instructions on how to use the application. We have also moved deployment over to Heroku due to Netlify being mean to us.
+
+**1.4.0**
+
+PR from build 1.4.0: 
+
+In this build, we have the results rendering right on the history page after a user clicks on one of the re-run routes on the history page. We have also added a bit of CSS/SCSS styling to the application.
