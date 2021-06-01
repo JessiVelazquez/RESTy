@@ -4,7 +4,7 @@ Author: Jessi Velazquez
 
 Deployed Link: [https://resty-by-jessi.herokuapp.com/](https://resty-by-jessi.herokuapp.com/)
 
-PR from Today's Lab: [https://github.com/JessiVelazquez/RESTy/pull/14](https://github.com/JessiVelazquez/RESTy/pull/14)
+PR from Today's Lab: [https://github.com/JessiVelazquez/RESTy/pull/19](https://github.com/JessiVelazquez/RESTy/pull/19)
 
 # Overview
 
@@ -36,6 +36,6 @@ In this release, we have built out a seperate history page, which shows the user
 
 **1.4.0**
 
-PR from build 1.4.0: 
+PR from build 1.4.0: [https://github.com/JessiVelazquez/RESTy/pull/19](https://github.com/JessiVelazquez/RESTy/pull/19)
 
 In this build, we have the results rendering right on the history page after a user clicks on one of the re-run routes on the history page. We have also added a bit of CSS/SCSS styling to the application.
