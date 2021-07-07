@@ -38,4 +38,4 @@ In this release, we have built out a seperate history page, which shows the user
 
 PR from build 1.4.0: [https://github.com/JessiVelazquez/RESTy/pull/19](https://github.com/JessiVelazquez/RESTy/pull/19)
 
-In this build, we have the results rendering right on the history page after a user clicks on one of the re-run routes on the history page. We have also added a bit of CSS/SCSS styling to the application.
+With this build, the results are now rendering right on the history page after a user clicks on one of the re-run routes on the history page. We have also added a bit of CSS/SCSS styling to the application.
